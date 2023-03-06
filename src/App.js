@@ -33,7 +33,7 @@ function App() {
             <div>
               <div className='name fw-bold text-dark-p'>Bryan <span className='text-orange'>Leon</span></div>
               <p className='fs-4 text-dark-secundary mb-5'>ECUADOR, SANTO DOMINGO DE LOS TSACHILAS <span className='text-orange'>bleon27leon@gmail.com</span></p>
-              <p className='fs-5 mb-5'>
+              <p className='fs-4 mb-5'>
                 Motivado a seguir capacitándome
                 en mi crecimiento profesional, así
                 mismo, perfeccionando cada una

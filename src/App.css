@@ -191,3 +191,15 @@ li {
     width: 100%;
   }
 }
+
+@media (max-width: 475px) {
+  .name {
+    font-size: 50pt !important;
+  }
+  h1 {
+    font-size: 35pt !important;
+  }
+  h2 {
+    font-size: 20pt !important;
+  }
+}
