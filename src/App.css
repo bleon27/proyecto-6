@@ -82,7 +82,7 @@
 }
 
 .text-dark-p {
-  color: #2a3c66;
+  color: #2a3c66!important;
 }
 
 @font-face {
@@ -147,6 +147,113 @@ li {
   min-height: 100vh;
 }
 
+.photos {
+  width: 95%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnails {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.thumbnails img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.black {
+  text-align: center;
+  background: #000;
+  background-blend-mode: multiply;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.title {
+  color: #fff;
+  font-size: 2em;
+  align-self: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.black,
+.title {
+  transition: opacity 0.3s;
+}
+
+.thumbnails:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  z-index: 20;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.url_redirect {
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.url_redirect:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.thumbnails:hover .black,
+.thumbnails:hover .title {
+  opacity: 0;
+}
+
+.img-border-dark {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.modal-body {
+  font-family: "SairaExtraCondensed-Light", BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #6c757d !important;
+  font-size: 25pt !important;
+}
+.modal-title {
+  font-family: "SairaExtraCondensed-SemiBold", BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #2a3c66 !important;
+  font-size: 25pt !important;
+}
+
+.git-modal {
+  font-size: 30pt;
+}
+
+.listas-p {
+  font-size: 18pt;
+  margin-bottom: 5px;
+}
+/*
 .container-img-projects .overlay {
   position: absolute;
   top: 0px;
@@ -161,6 +268,8 @@ li {
 .container-img-projects:hover .overlay {
   width: 100%;
 }
+
+*/
 
 @media (max-width: 1024px) {
   .content-person {
