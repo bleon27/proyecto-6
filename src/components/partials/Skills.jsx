@@ -1,6 +1,6 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { FaJava, FaReact, FaPhp, FaLaravel, FaBootstrap } from "react-icons/fa";
+import { FaJava, FaReact, FaPhp, FaLaravel, FaBootstrap, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiCsharp, SiCplusplus, SiPostgresql, SiMongodb, SiExpress } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
@@ -42,9 +42,9 @@ function About() {
                                 </ul>
                             </Col>
                             <Col xl={4} lg={4} md={5} sm={12} xs={12} className='px-3 py-3'>
-                                <ul>
-                                    <li>Resolución de problemas técnicos</li>
-                                    <li>Liderazgo de proyectos</li>
+                                <h2>Entorno en tiempo de ejecución</h2>
+                                <ul className='list-unstyled'>
+                                    <li><FaNodeJs className='fs-4 mb-2 text-dark-p' /> Node.js</li>
                                 </ul>
                             </Col>
                         </Row>
